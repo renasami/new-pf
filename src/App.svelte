@@ -1,9 +1,12 @@
 <script lang="ts">
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
+  import "carbon-components-svelte/css/g80.css";
+  import Header from "./components/layouts/Header.svelte";
 </script>
 
 <main>
+  <Header/>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello Typescript!</h1>
 
