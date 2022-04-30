@@ -13,6 +13,9 @@
     </div>
     <button class="sp-navi-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="menu">MENU</span><span class="close">CLOSE</span></button>
     </header>
+    <div id="props">
+        <slot></slot>
+    </div>
 </main>
 <script lang="ts">
 import {Router, link} from "svelte-routing";
@@ -31,6 +34,7 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 0;
+  height:50px;
   background: rgb(20, 20, 20);
 }
 header .inner {
@@ -41,7 +45,9 @@ header .inner {
   height: 100%;
 }
 /* .logo */
-
+#props {
+    padding-top: 50px;
+}
 header .logo {
   position: relative;
   margin: 0;
