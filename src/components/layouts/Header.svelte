@@ -47,6 +47,7 @@ header .inner {
 /* .logo */
 #props {
     padding-top: 50px;
+    text-align: left;
 }
 header .logo {
   position: relative;

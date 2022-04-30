@@ -1,22 +1,20 @@
 <script lang="ts">
-  import logo from './assets/svelte.png'
   import "carbon-components-svelte/css/g80.css";
   import Header from "./components/layouts/Header.svelte";
   import { Route, Router } from 'svelte-routing';
-import About from './pages/About.svelte';
-import Contact from './pages/Contact.svelte';
-import Skills from './pages/Skills.svelte';
-import Works from './pages/Works.svelte';
+  import About from './pages/About.svelte';
+  import Contact from './pages/Contact.svelte';
+  import Skills from './pages/Skills.svelte';
+  import Works from './pages/Works.svelte';
 </script>
 
 <main>
   <Router>
-  <Route path="/" component="{About}" />
-  <Route path="contact" component="{Contact}" />
-  <Route path="skills" component="{Skills}" />
-  <Route path="works" component="{Works}" />
+    <Route path="/" component="{About}" />
+    <Route path="contact" component="{Contact}" />
+    <Route path="skills" component="{Skills}" />
+    <Route path="works" component="{Works}" />
   </Router>
-
 </main>
 
 <style>
