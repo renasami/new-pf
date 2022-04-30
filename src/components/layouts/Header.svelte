@@ -5,9 +5,9 @@
         <Router>
         <ul class="navi">
         <li><a href='/' class='link' use:link>about</a></li>
-        <li><a href='/' class='link' use:link>works</a></li>
-        <li><a href='/' class='link' use:link>jobs</a></li>
-        <li><a href='/' class='link' use:link>contact</a></li>
+        <li><a href='/works' class='link' use:link>works</a></li>
+        <li><a href='/skills' class='link' use:link>skills</a></li>
+        <li><a href='/contact' class='link' use:link>contact</a></li>
         </ul>
         </Router>
     </div>
