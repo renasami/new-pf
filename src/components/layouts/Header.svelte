@@ -1,26 +1,27 @@
 <main>
     <header>
     <div class="inner">
-        <p class="logo"><a class="over" href="/">COMPANY</a></p>
+        <p class="logo"><a class="over" href="/" use:link>Ren's PortFolio</a></p>
+        <Router>
         <ul class="navi">
-        <li><a href="/">選ばれる理由</a></li>
-        <li><a href="/">サービス</a></li>
-        <li><a href="/">制作事例</a></li>
-        <li><a href="/">会社案内</a></li>
-
+        <li><a href='/' class='link' use:link>about</a></li>
+        <li><a href='/' class='link' use:link>works</a></li>
+        <li><a href='/' class='link' use:link>jobs</a></li>
+        <li><a href='/' class='link' use:link>contact</a></li>
         </ul>
+        </Router>
     </div>
     <button class="sp-navi-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="menu">MENU</span><span class="close">CLOSE</span></button>
     </header>
 </main>
-
 <script lang="ts">
-
+import {Router, link} from "svelte-routing";
 </script>
-<style>
+<style scoped>
+    
 :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Sans Pro', serif;
+/* font-family: 'Roboto', sans-serif; */
   }
 
 header {
@@ -30,8 +31,7 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 0;
-  background: #eee;
-  
+  background: rgb(20, 20, 20);
 }
 header .inner {
   position: relative;
@@ -44,19 +44,17 @@ header .inner {
 
 header .logo {
   position: relative;
-  width: 100px;
   margin: 0;
   padding: 0;
+  color: rgba(211, 219, 255, 0.5);
 }
 header .logo a {
+  color: rgba(211, 219, 255, 0.836);
   text-decoration: none;
 }
-
 @media screen and (max-width: 767px) {
   header .logo {
     padding: 0;
-  }
-  header .logo a {
   }
 }
 
@@ -74,10 +72,6 @@ header.scroll {
 header .logo {
   transition: width 0.4s cubic-bezier(0.34, 0.615, 0.4, 0.985);
 }
-header.scroll .logo {
-  width: 70px;
-}
-
 /* header-navi-box */
 
 header .navi {
@@ -95,21 +89,15 @@ header .navi li {
 header .navi li:first-child {
   margin-left: 0;
 }
-header .navi li a {
+.link {
   display: block;
   box-sizing: border-box;
   text-decoration: none;
+  color: rgba(211, 219, 255, 0.5);
 }
 header .navi li a:hover {
   text-decoration: underline;
 }
-.button{
-  background: #005eed;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 4px;
-}
-
 @media screen and (max-width: 767px) {
   header .navi {
     display: none;
