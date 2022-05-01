@@ -6,6 +6,9 @@
   import Contact from './pages/Contact.svelte';
   import Skills from './pages/Skills.svelte';
   import Works from './pages/Works.svelte';
+  import { dictionary, locale, _ } from "svelte-i18n"
+  import {language} from "./store"
+  locale.set(String(language))
 </script>
 
 <main>

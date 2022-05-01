@@ -1,7 +1,7 @@
 <main>
     <Header>
     <h1>
-       {$_('about.page_title')}
+       {$_('page_title')}
     </h1>
     
     </Header>
@@ -11,9 +11,9 @@
     import { dictionary, locale, _ } from "svelte-i18n"
     import * as en from "../i18n/en-US.json" 
     import * as ja from "../i18n/ja.json" 
+    import {ja,en} from "../store"
     dictionary.set({
-        "en": {...en},
-        "ja": {...ja}
+      "ja":{...ja},  
+      "en":{...en}
     })
-    locale.set('en');
 </script>
