@@ -7,13 +7,20 @@
     "dev": "vite --port 4000",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/svelte": "^3.1.1",
+    "@testing-library/user-event": "^14.1.1",
     "@tsconfig/svelte": "^2.0.1",
+    "@types/testing-library__user-event": "^4.2.0",
     "add": "^2.0.6",
     "carbon-components-svelte": "^0.63.3",
+    "jest-extended": "^2.0.0",
     "mdsvex": "^0.10.5",
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.7",
@@ -22,6 +29,7 @@
     "typescript": "^4.5.4",
     "vite": "^2.9.6",
     "vite-plugin-fonts": "^0.3.0",
+    "vitest": "^0.10.2",
     "yarn": "^1.22.18"
   },
   "dependencies": {

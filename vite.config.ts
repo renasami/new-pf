@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { mdsvex } from "mdsvex";
@@ -9,10 +11,9 @@ export default defineConfig({
     extensions: [".svelte", ".svx"],
     preprocess: mdsvex()
   }),
-  // ViteFonts({
-  //   google: {
-  //     families: ['Source Sans Pro']
-  //   },
-  // })
-]
+  ],
+  test: {
+    globals: true,
+    setupFiles: './src/setup.ts',
+  }
 })
