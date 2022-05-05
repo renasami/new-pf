@@ -36,6 +36,7 @@
     "carbon-icons-svelte": "^11.0.1",
     "markdown-it": "^13.0.0",
     "svelte-i18n": "^3.4.0",
+    "svelte-markdown": "^0.2.2",
     "svelte-routing": "^1.6.0"
   }
 }
